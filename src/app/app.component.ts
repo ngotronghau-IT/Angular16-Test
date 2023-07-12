@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
-
+import { AuthService } from './auth.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular16';
+  constructor( private auth:AuthService){}
+  thoat(){ this.auth.thoat();  }
+  daDangNhap() { return this.auth.daDangNhap()}
+  
+  
 }

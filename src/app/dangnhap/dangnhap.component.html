@@ -1,0 +1,18 @@
+<div class="login-container">
+    <section class="login" id="login">
+      <header>
+        <h2>Information Login:</h2>
+      
+      </header>
+      <form #frm1="ngForm" class="login-form" action="#" method="post" (ngSubmit)="xulyDN(frm1.value)">
+        <input name="un" ngModel class="login-input" type="text"  placeholder="User" required autofocus/>
+        <input name="pw" ngModel class="login-input" type="password"  placeholder="Password" required/>
+        <div class="submit-container">
+          <button type="submit" class="login-button">Đăng Nhập</button>
+        </div>
+      </form>
+    </section>
+    <p>2016 - <a href="https://www.twitter.com/isacfadoni">Isac Fadoni</a></p>
+  </div>
+  <button id="e1">Login error!</button>
+  
